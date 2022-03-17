@@ -1,0 +1,311 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #028;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #06f;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.btn {
+  color: #06f;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#car-rental {
+  width: 80%;
+  display: flex;
+  align-self: flex-start;
+  margin: 64px 0;
+  min-height: 80%;
+}
+
+#car-rental aside {
+  width: 115px;
+  border-right: 1px solid #0005;
+  padding-top: 8px;
+}
+
+#car-rental aside a {
+  margin-bottom: 32px!important;
+  display: block;
+}
+
+.error-msg {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f00;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f003;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.error-msg2 {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f00;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f003;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #06f;
+  padding: 4px;
+  color: #fff;
+  text-align: right;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h3 {
+  color: #000a;
+}
+
+header {
+  background-color: #06f;
+  padding: 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #fffa;
+}
+
+#homepage-main-container {
+  width: 60%;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+}
+
+#homepage-main-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+input {
+  background-color: #0002;
+  border-radius: 2px;
+  border: none;
+  padding: 8px;
+}
+
+main {
+  height: "auto";
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#register-form input[name="username"] {
+  margin: 8px auto 16px;
+  text-align: center;
+}
+
+#register-form label {
+  font-size: 13px;
+}
+
+#rentals-list ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+#rentals-list ul li {
+  margin: 0 0 32px;
+  border-bottom: 1px solid #06f;
+  padding-bottom: 16px;
+}
+
+#rentals-list .dropoff {
+  margin: 0;
+}
+
+#rentals-list .pickup {
+  margin: 8px 0 4px;
+}
+
+#rent-form {
+  margin-top: 32px;
+  position: relative;
+}
+
+#rent-form .address-cont {
+  width: 100%;
+  display: flex;
+}
+
+#rent-form .address-cont input {
+  margin: 0 4px;
+  min-width: 55px;
+}
+
+#rent-form input[type="datetime-local"] {
+  margin-top: 12px;
+}
+
+#rent-form .address-cont .address {
+  flex: 4;
+}
+
+#rent-form .address-cont .city {
+  flex: 3;
+}
+
+#rent-form .address-cont .state {
+  flex: 1;
+}
+
+#rent-form .address-cont .country {
+  flex: 1.75;
+}
+
+#rent-form .address-cont .zip {
+  flex: 1;
+}
+
+#rent-form > div, #rent-form > fieldset, #rent-form > input {
+  margin-bottom: 24px;
+}
+
+#rent-form fieldset {
+  text-align: center;
+}
+
+.username-cont label {
+  font-size: 14px;
+}
+
+.username-cont input[name="username"] {
+  margin-top: 8px;
+}
+
+.success-msg {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0a0;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #0f03;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.success-msg2 {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0a0;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #0f03;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.vehicle-detail {
+  margin-left: 32px;
+  width: 100%;
+  position: relative;
+  padding: 32px;
+}
+
+.vehicle-detail .cont {
+  display: flex;
+}
+
+.vehicle-detail .name-cont {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.vehicle-detail .price-cont p {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.vehicle-detail .ppd span, .vehicle-detail .mileage span, .vehicle-detail .ppg span {
+  font-weight: bold;
+  color: #06f;
+}
+
+.vehicle-detail .name {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.vehicle-detail .type {
+  margin-top: 0;
+  font-weight: 100;
+  color: #06f;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.vehicle-detail p, #rentals-list p {
+  font-size: 18px;
+  color: #0009;
+  font-weight: bold;
+}
+
+.vehicles-li {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #06f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicles-li .name-and-year, #rentals-list ul li .name-and-year {
+  margin: 0;
+}
+
+.vehicles-li .vin, #rentals-list ul li .vin {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #4d75b3;
+  margin-bottom: 4px;
+}
+
+#vehicles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-left: 64px;
+}
